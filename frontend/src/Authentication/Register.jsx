@@ -133,7 +133,7 @@ export default function Register() {
                 mb: 2,
               }}
             >
-              Raise My Issue
+              Ticketing System
             </Typography>
             
           </Box>

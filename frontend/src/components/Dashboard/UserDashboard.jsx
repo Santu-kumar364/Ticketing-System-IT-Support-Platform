@@ -87,13 +87,7 @@ import { logoutAction } from "../../Redux/Auth/auth.action";
 
 // Ticket Card Component for better organization
 const TicketCard = React.memo(
-  ({
-    ticket,
-    user,
-    onStatusUpdate,
-    onAddComment,
-    updating,
-  }) => {
+  ({ ticket, user, onStatusUpdate, onAddComment, updating }) => {
     const getStatusColor = (status) => {
       switch (status) {
         case "OPEN":
@@ -379,7 +373,7 @@ export default function UserDashboard() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-  const auth  = useSelector((store) => store.auth);
+  const auth = useSelector((store) => store.auth);
   const { tickets, loading, error, updating } = useSelector(
     (store) => store.ticket
   );
@@ -552,7 +546,7 @@ export default function UserDashboard() {
           <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
             <AutoAwesome sx={{ mr: 2, fontSize: 28 }} />
             <Typography variant="h6" component="div" fontWeight="600">
-              Raise My Issue
+              Ticketing System
             </Typography>
           </Box>
 

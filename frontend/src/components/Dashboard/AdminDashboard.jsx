@@ -421,8 +421,12 @@ export default function AdminDashboard() {
         !searchTerm ||
         ticket.subject?.toLowerCase().includes(searchTerm.toLowerCase()) ||
         ticket.description?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        ticket.createdBy?.firstName?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        ticket.createdBy?.lastName?.toLowerCase().includes(searchTerm.toLowerCase());
+        ticket.createdBy?.firstName
+          ?.toLowerCase()
+          .includes(searchTerm.toLowerCase()) ||
+        ticket.createdBy?.lastName
+          ?.toLowerCase()
+          .includes(searchTerm.toLowerCase());
       return statusMatch && priorityMatch && searchMatch;
     }) || [];
 
@@ -482,32 +486,48 @@ export default function AdminDashboard() {
     <Box
       sx={{ flexGrow: 1, minHeight: "100vh", bgcolor: "background.default" }}
     >
-       
       <AppBar position="static" elevation={1} sx={{ bgcolor: "primary.main" }}>
         <Toolbar>
           <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
             <AutoAwesome sx={{ mr: 2, fontSize: 28 }} />
             <Typography variant="h6" component="div" fontWeight="600">
-              Raise My Issue
+              Ticketing System
             </Typography>
           </Box>
 
           <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-            <Chip 
+            <Chip
               icon={<Security />}
-              label={`Administrator`} 
-              color="secondary" 
+              label={`Administrator`}
+              color="secondary"
               size="small"
             />
-            
-            <IconButton color="inherit" onClick={(e) => setAnchorEl(e.currentTarget)}>
-              <Avatar sx={{ width: 36, height: 36, bgcolor: "white", color: "primary.main", fontSize: "14px", fontWeight: "bold" }}>
-                {user?.firstName?.[0]}{user?.lastName?.[0]}
+
+            <IconButton
+              color="inherit"
+              onClick={(e) => setAnchorEl(e.currentTarget)}
+            >
+              <Avatar
+                sx={{
+                  width: 36,
+                  height: 36,
+                  bgcolor: "white",
+                  color: "primary.main",
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                }}
+              >
+                {user?.firstName?.[0]}
+                {user?.lastName?.[0]}
               </Avatar>
             </IconButton>
           </Box>
 
-          <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={() => setAnchorEl(null)}>
+          <Menu
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={() => setAnchorEl(null)}
+          >
             <MenuItem onClick={handleLogout}>
               <ExitToApp sx={{ mr: 1 }} /> Logout
             </MenuItem>

@@ -93,7 +93,7 @@ export default function Login() {
         backgroundColor: "#fafafa",
       }}
     >
-      <Box sx={{ width: "100%", maxWidth: 350 }}>
+      <Box sx={{ width: "100%", maxWidth: 375 }}>
         {/* Main Login Card */}
         <Paper
           elevation={0}
@@ -116,7 +116,7 @@ export default function Login() {
                 mb: 2,
               }}
             >
-              Raise My Issue
+              Ticketing System
             </Typography>
 
             {roleHint && (
