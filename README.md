@@ -1,5 +1,5 @@
+<img width="503" height="100" alt="leapLogo" src="https://github.com/user-attachments/assets/497ad13a-301c-4442-8190-54ffece2c024" />
 # Ticketing System - IT Support Platform
-
 A full-stack ticketing system built with Spring Boot backend and Next.js frontend for IT support and customer service scenarios.
 
 ## 🚀 Features
@@ -60,4 +60,5 @@ A full-stack ticketing system built with Spring Boot backend and Next.js fronten
 
 📧 Submission
 - Submitted to: anjali.mishrar@leapfinance.com
+
 
