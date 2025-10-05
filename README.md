@@ -58,10 +58,6 @@ A full-stack ticketing system built with Spring Boot backend and Next.js fronten
 - Spring Boot
 - React.js
 
-## 🚀 Getting Started
-
-### Backend Setup
-```bash
-cd backend
-./mvnw spring-boot:run
+📧 Submission
+- Submitted to: anjali.mishrar@leapfinance.com
 
