@@ -36,7 +36,7 @@ A full-stack ticketing system built with Spring Boot backend and Next.js fronten
 
 ## 📸 Screenshots
 
-### Login & Register
+### Register & Login
 ![Login Page](https://github.com/user-attachments/assets/76835f66-4961-49ef-84e5-a7afd94e0151)
 ![Register Page](https://github.com/user-attachments/assets/85674e7d-cc4c-4ead-acb5-55ca3b3522b3)
 
@@ -61,6 +61,7 @@ A full-stack ticketing system built with Spring Boot backend and Next.js fronten
 
 📧 Submission
 - Submitted to: anjali.mishrar@leapfinance.com
+
 
 
 
