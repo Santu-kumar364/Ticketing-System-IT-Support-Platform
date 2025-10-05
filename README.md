@@ -39,6 +39,9 @@ A full-stack ticketing system built with Spring Boot backend and Next.js fronten
 ![Login Page](https://github.com/user-attachments/assets/76835f66-4961-49ef-84e5-a7afd94e0151)
 ![Register Page](https://github.com/user-attachments/assets/85674e7d-cc4c-4ead-acb5-55ca3b3522b3)
 
+### User Dashboard
+![User View](https://github.com/user-attachments/assets/3cc223fe-24db-4b7a-87c1-75ef018ba3cf)
+
 ### Support Agent View
 ![Support Agent Dashboard](https://github.com/user-attachments/assets/318f9be4-8d65-4e1e-88da-e84f0d6644d5)
 ![Support Agent Tickets](https://github.com/user-attachments/assets/fab47532-35bd-4438-8063-51ef757ac030)
@@ -47,9 +50,6 @@ A full-stack ticketing system built with Spring Boot backend and Next.js fronten
 ![Admin Dashboard](https://github.com/user-attachments/assets/49de120c-7e42-4b03-bbe9-64f1726260e2)
 ![User Management](https://github.com/user-attachments/assets/2405b59c-f534-4634-a9d0-cd0c2b779513)
 ![Admin Tickets](https://github.com/user-attachments/assets/02b7ed51-10ac-40f0-a48c-95a8898d53cc)
-
-### User Dashboard
-![User View](https://github.com/user-attachments/assets/3cc223fe-24db-4b7a-87c1-75ef018ba3cf)
 
 ## 📋 Prerequisites
 
@@ -64,3 +64,4 @@ A full-stack ticketing system built with Spring Boot backend and Next.js fronten
 ```bash
 cd backend
 ./mvnw spring-boot:run
+
